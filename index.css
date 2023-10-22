@@ -7,10 +7,13 @@ body {
 
 /* typogrophy */
 
+h1, h3 {
+    margin: 0;
+}
+
 h1 {
     font-size: 36px;
     color: whitesmoke;
-    margin: 0;
 }
 
 h2 {
@@ -21,7 +24,10 @@ h2 {
 h3 {
     font-size: 20px;
     color: #d0aaff;
-    margin: 0;
+}
+
+p {
+    line-height: 23px;
 }
 
 /* links */
@@ -32,27 +38,23 @@ a {
     text-decoration-style: dotted;
 }
 
-a:hover {
-    color: #d4b44c;
-}
-
-a:active {
+a:hover, a:active {
     color: #d4b44c;
 }
 
 /* layout */
 
-header {
-    background-color: #5f29a3;
-    padding: 45px 0px;
+header, 
+section, 
+footer {
+    padding: 45px 0;
 }
 
-section {
-    padding: 45px 0px;
+header, .section-two {
+    background-color: #5f29a3;
 }
 
 .section-two{
-    background-color: #5f29a3;
     color: whitesmoke;
 }
 
@@ -75,5 +77,37 @@ section {
     border-radius: 4.6px;
 }
 
+footer {
+    text-align: center;
+    color: #5f29a3;
+}
 
+/* buttons */
 
+.btn-dark{
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.btn-mid{
+    background-color: #f0e0ff;
+    color: #5f29a3;
+}
+
+.btn-light{
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:active {
+    background-color: #f3e885;
+    color: #2b283a;
+}
